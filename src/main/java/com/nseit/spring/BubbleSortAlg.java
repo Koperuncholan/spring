@@ -1,7 +1,11 @@
 package com.nseit.spring;
 
-public class BubbleSortAlg {
-    public int[] sort(int[] numbers){
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
+@Component
+@Primary
+public class BubbleSortAlg implements SortAlg {
+    public int[] sort(int[] numbers) {
         return numbers;
     }
 }
